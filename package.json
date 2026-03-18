@@ -1,5 +1,5 @@
 {
-  "name": "marp-slide-generator",
+  "name": "MarpSlideGenerator",
   "version": "1.0.0",
   "description": "Marp slide generator from JSON data",
   "scripts": {
