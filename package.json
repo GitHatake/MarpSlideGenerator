@@ -1,0 +1,16 @@
+{
+  "name": "marp-slide-generator",
+  "version": "1.0.0",
+  "description": "Marp slide generator from JSON data",
+  "scripts": {
+    "build:md": "node generate.js ../slide_input.json build/output.md",
+    "build:pdf": "marp build/output.md --theme themes/custom-theme.css --pdf --allow-local-files",
+    "build:html": "marp build/output.md --theme themes/custom-theme.css --html --allow-local-files",
+    "build:pptx": "marp build/output.md --theme themes/custom-theme.css --pptx --allow-local-files",
+    "generate": "npm run build:md && npm run build:pdf",
+    "preview": "npm run build:md && marp -p build/output.md --theme themes/custom-theme.css --html"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}
